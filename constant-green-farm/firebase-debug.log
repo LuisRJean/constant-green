@@ -1,0 +1,26 @@
+[debug] [2022-10-06T21:33:23.939Z] ----------------------------------------------------------------------
+[debug] [2022-10-06T21:33:23.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Luis\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2022-10-06T21:33:23.944Z] CLI Version:   11.14.0
+[debug] [2022-10-06T21:33:23.945Z] Platform:      win32
+[debug] [2022-10-06T21:33:23.945Z] Node Version:  v18.4.0
+[debug] [2022-10-06T21:33:23.946Z] Time:          Thu Oct 06 2022 17:33:23 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2022-10-06T21:33:23.947Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-06T21:33:24.206Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-06T21:33:24.207Z] > authorizing via signed-in user (ljmontreal1@gmail.com)
+[debug] [2022-10-06T21:33:24.276Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2022-10-06T21:33:39.718Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-10-06T21:33:39.778Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] ┌──────────────────────┬──────────────────────────┬────────────────┬──────────────────────┐
+│ Project Display Name │ Project ID               │ Project Number │ Resource Location ID │
+├──────────────────────┼──────────────────────────┼────────────────┼──────────────────────┤
+│ Constant-green       │ constant-green (current) │ 992267556609   │ [Not specified]      │
+└──────────────────────┴──────────────────────────┴────────────────┴──────────────────────┘
+[info] 
+[info] 1 project(s) total.
+[debug] [2022-10-06T21:33:49.459Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\Luis\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
