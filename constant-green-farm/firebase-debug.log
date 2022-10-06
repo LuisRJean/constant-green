@@ -1,0 +1,76 @@
+[debug] [2022-10-06T22:04:25.200Z] ----------------------------------------------------------------------
+[debug] [2022-10-06T22:04:25.382Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Luis\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-06T22:04:25.384Z] CLI Version:   11.14.0
+[debug] [2022-10-06T22:04:25.385Z] Platform:      win32
+[debug] [2022-10-06T22:04:25.386Z] Node Version:  v18.4.0
+[debug] [2022-10-06T22:04:28.873Z] Time:          Thu Oct 06 2022 18:04:25 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2022-10-06T22:04:28.874Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-06T22:04:29.778Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-06T22:04:29.779Z] > authorizing via signed-in user (ljmontreal1@gmail.com)
+[debug] [2022-10-06T22:04:29.779Z] [iam] checking project constant-green for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-06T22:04:30.005Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/constant-green:testIamPermissions [none]
+[debug] [2022-10-06T22:04:30.006Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/constant-green:testIamPermissions x-goog-quota-user=projects/constant-green
+[debug] [2022-10-06T22:04:30.006Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/constant-green:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-06T22:04:37.710Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/constant-green:testIamPermissions 200
+[debug] [2022-10-06T22:04:37.711Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/constant-green:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-06T22:04:37.739Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/constant-green [none]
+[debug] [2022-10-06T22:04:39.837Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/constant-green 200
+[debug] [2022-10-06T22:04:39.837Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/constant-green {"projectId":"constant-green","projectNumber":"992267556609","displayName":"Constant-green","name":"projects/constant-green","resources":{"hostingSite":"constant-green"},"state":"ACTIVE","etag":"1_228c523c-fb8b-49c6-88b0-e8852113aa3e"}
+[info] 
+[info] === Deploying to 'constant-green'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-10-06T22:04:40.008Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/constant-green/versions [none]
+[debug] [2022-10-06T22:04:40.008Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/constant-green/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-10-06T22:04:45.300Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/constant-green/versions 200
+[debug] [2022-10-06T22:04:45.300Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/constant-green/versions {"name":"projects/992267556609/sites/constant-green/versions/fbeec7c9ddbc0f35","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[constant-green]: beginning deploy... 
+[info] i  hosting[constant-green]: found 2 files in dist 
+[debug] [2022-10-06T22:04:45.534Z] [hosting] uploading with 200 concurrency
+[debug] [2022-10-06T22:04:45.837Z] [hosting] hash cache [ZGlzdA] not populated
+[debug] [2022-10-06T22:04:46.940Z] [hosting] hash cache [ZGlzdA] stored for 2 files
+[debug] [2022-10-06T22:04:46.941Z] [hosting][hash queue][FINAL] {"max":1091,"min":1086,"avg":1088.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1098}
+[debug] [2022-10-06T22:04:46.943Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/992267556609/sites/constant-green/versions/fbeec7c9ddbc0f35:populateFiles [none]
+[debug] [2022-10-06T22:04:46.943Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/992267556609/sites/constant-green/versions/fbeec7c9ddbc0f35:populateFiles {"files":{"/404.html":"daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa","/index.html":"937880b49ca8edeed2b1428dcdc264026b29fbbdf89fba35964856d426880ba0"}}
+[debug] [2022-10-06T22:04:49.799Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/992267556609/sites/constant-green/versions/fbeec7c9ddbc0f35:populateFiles 200
+[debug] [2022-10-06T22:04:49.799Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/992267556609/sites/constant-green/versions/fbeec7c9ddbc0f35:populateFiles {"uploadRequiredHashes":["daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa","937880b49ca8edeed2b1428dcdc264026b29fbbdf89fba35964856d426880ba0"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files"}
+[debug] [2022-10-06T22:04:49.802Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa [none]
+[debug] [2022-10-06T22:04:49.802Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa [stream]
+[debug] [2022-10-06T22:04:49.811Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/937880b49ca8edeed2b1428dcdc264026b29fbbdf89fba35964856d426880ba0 [none]
+[debug] [2022-10-06T22:04:49.811Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/937880b49ca8edeed2b1428dcdc264026b29fbbdf89fba35964856d426880ba0 [stream]
+[debug] [2022-10-06T22:04:49.821Z] [hosting][populate queue][FINAL] {"max":2866,"min":2866,"avg":2866,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2885}
+[debug] [2022-10-06T22:04:49.821Z] [hosting] uploads queued: 2
+[debug] [2022-10-06T22:04:56.514Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa 200
+[debug] [2022-10-06T22:04:56.514Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa [stream]
+[debug] [2022-10-06T22:04:56.829Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/937880b49ca8edeed2b1428dcdc264026b29fbbdf89fba35964856d426880ba0 200
+[debug] [2022-10-06T22:04:56.830Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/constant-green/versions/fbeec7c9ddbc0f35/files/937880b49ca8edeed2b1428dcdc264026b29fbbdf89fba35964856d426880ba0 [stream]
+[debug] [2022-10-06T22:04:56.830Z] [hosting][upload queue][FINAL] {"max":7029,"min":6714,"avg":6871.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":7030}
+[info] +  hosting[constant-green]: file upload complete 
+[debug] [2022-10-06T22:04:56.832Z] [hosting] deploy completed after 11525ms
+[debug] [2022-10-06T22:04:56.854Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "constant-green"
+    },
+    "version": "projects/992267556609/sites/constant-green/versions/fbeec7c9ddbc0f35"
+  }
+]
+[info] i  hosting[constant-green]: finalizing version... 
+[debug] [2022-10-06T22:04:56.858Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/constant-green/locations/-/functions [none]
+[debug] [2022-10-06T22:05:03.137Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/constant-green/locations/-/functions 403
+[debug] [2022-10-06T22:05:03.138Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/constant-green/locations/-/functions {"error":{"code":403,"message":"Cloud Functions API has not been used in project 992267556609 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudfunctions.googleapis.com/overview?project=992267556609 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/cloudfunctions.googleapis.com/overview?project=992267556609"}]},{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"consumer":"projects/992267556609","service":"cloudfunctions.googleapis.com"}}]}}
+[debug] [2022-10-06T22:05:03.142Z] [functions] failed to list functions for constant-green
+[debug] [2022-10-06T22:05:03.142Z] [functions] HTTP Error: 403, Cloud Functions API has not been used in project 992267556609 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudfunctions.googleapis.com/overview?project=992267556609 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[debug] [2022-10-06T22:05:08.621Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Luis\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
