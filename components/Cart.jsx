@@ -5,7 +5,7 @@ import { TiDeleteOutline } from 'react-icons/ti';
 import toast from 'react-hot-toast';
 
 import { useStateContext } from '../pages/product/context/StateContext';
-import { urlFor } from '../constant-green-farm/lib/lient';
+import { urlFor } from '../constant-green-farm/lib/client';
 import getStripe from '../constant-green-farm/lib/GetStripe.js';
 
 const Cart = () => {
