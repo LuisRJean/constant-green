@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { urlFor } from '../constant-green-farm/lib/Client.js';
+import { urlFor } from '../constant-green-farm/lib/client';
 
 
 const FooterBanner = ({ footerBanner }) => {
