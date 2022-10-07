@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
-import { urlFor } from '../constant-green-farm/lib/client';
+import { urlFor } from '../constant-green-farm/lib/Client.js';
 
 
 const Product = ({ product: { image, name, slug, price } }) => {
