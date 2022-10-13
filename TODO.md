@@ -23,3 +23,4 @@
 #fix the footer
 #fix the mobile view
 #fix the device toolkit view
+#iphone 12 view and 
