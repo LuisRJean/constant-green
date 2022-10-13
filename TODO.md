@@ -21,3 +21,4 @@
 #Legal
 
 #fix the footer
+#fix the mobile view
