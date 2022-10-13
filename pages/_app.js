@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast';
 
 import { Layout } from '../components';
 import '../styles/globals.css';
-import { StateContext } from '../pages/product/context/StateContext';
+import { StateContext } from '../context/StateContext';
 
 function MyApp({ Component, pageProps }) {
   return (
