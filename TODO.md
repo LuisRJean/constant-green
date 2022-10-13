@@ -22,3 +22,4 @@
 
 #fix the footer
 #fix the mobile view
+#fix the device toolkit 
