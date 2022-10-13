@@ -17,3 +17,11 @@
 #iphone 12 view and the iphone 12 pro view and up
 #fix the tablet view
 #fix the IG, Twitter Icons on the footer and the social media icons on the home page by creating a hover effect with new files
+
+
+#All Red Buttons on the site should be changed to Green
+#DARK GREEN (PASTEL) COLOR FOR THE BUTTONS
+#BEE5B0
+
+#BRITISH RACING GREEN
+#004225
