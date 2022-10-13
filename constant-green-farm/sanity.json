@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "constant green farm"
-  },
   "api": {
     "projectId": "763jxe6w",
     "dataset": "production"
+  },
+  "project": {
+    "name": "constant green farm"
   },
   "plugins": [
     "@sanity/base",
@@ -23,7 +23,7 @@
   },
   "parts": [
     {
-      "name": "part:@sanity/base/schema", 
+      "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
     }
   ]
