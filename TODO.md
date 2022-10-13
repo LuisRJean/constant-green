@@ -25,4 +25,4 @@
 #fix the device toolkit view
 #iphone 12 view and the iphone 12 pro view and up
 #fix the tablet view
-#fix the IG, Twitter Icons on the footer and the social media icons on the home page
+#fix the IG, Twitter Icons on the footer and the social media icons on the home page by creating a hover effect with new files
