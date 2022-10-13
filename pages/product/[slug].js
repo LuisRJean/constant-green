@@ -3,7 +3,7 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 
 import { client, urlFor } from '../../constant-green-farm/lib/client';
 import { Product } from '../../components';
-import { useStateContext } from '../../pages/product/context/StateContext';
+import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
     
